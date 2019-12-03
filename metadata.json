@@ -1,6 +1,6 @@
 {
   "name": "mightp-influxdb",
-  "version": "0.9.0",
+  "version": "0.9.0-uls",
   "author": "Magnus Larsen",
   "summary": "Install and configures InfluxDB",
   "license": "Apache-2.0",
@@ -14,11 +14,11 @@
     },
     {
       "name": "puppetlabs/apt",
-      "version_requirement": ">= 7.0.0"
+      "version_requirement": ">= 4.5.1"
     },
     {
       "name": "puppetlabs/stdlib",
-      "version_requirement": ">= 5.0.0"
+      "version_requirement": ">= 4.25.1"
     },
     {
       "name": "puppet/healthcheck",
