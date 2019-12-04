@@ -123,7 +123,7 @@ class influxdb::config {
 
     file { $influxdb::config_path:
       ensure  => 'file',
-      content => template("${module_name}/influxdb.conf.erb"),
+      content => inline_template("<%= require 'toml'; TOML::Generator.new(@config).body %>\n"),
       owner   => $influxdb::owner,
       group   => $influxdb::group,
       notify  => Service['influxdb'],
